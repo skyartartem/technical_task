@@ -1,87 +1,130 @@
-export const comments = [
+export const users = [
   {
-    createdAt: '2022-11-08T23:32:51.233Z',
-    content:
-      'Voluptas ex laborum ut. Numquam aut ab reiciendis consequatur molestiae veritatis ratione ex. Maiores adipisci ab illum minima dolores.',
-    author: 'Bill Weber',
-    avatar: 'http://loremflickr.com/640/480/food',
-    thumbsUp: 104,
-    thumbsDown: 48,
-    id: '1',
+    user: "Kelly Jast",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/290.jpg",
+    followers: 48,
+    tweets: 13,
+    id: "1",
   },
   {
-    createdAt: '2022-11-09T14:18:57.058Z',
-    content:
-      'Quam voluptatem expedita quasi placeat iusto nisi est aliquam deserunt. Id enim et aut optio. Totam quia adipisci quisquam vero aut asperiores hic. Vel libero expedita dignissimos dolore.',
-    author: 'Joyce Marks V',
-    avatar: 'http://loremflickr.com/640/480/animals',
-    thumbsUp: 27,
-    thumbsDown: 72,
-    id: '2',
+    user: "Earnest Stanton",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/628.jpg",
+    followers: 9,
+    tweets: 79,
+    id: "2",
   },
   {
-    createdAt: '2022-11-09T04:39:34.462Z',
-    content:
-      'Ex ut quisquam. Commodi rerum qui nihil illo et qui porro dolor. Possimus error eos nam modi dicta. Occaecati voluptatem amet dolorem dolore quis debitis accusantium provident nostrum. Rerum non qui voluptates sapiente quas ipsam aut at.',
-    author: 'Ernest Lehner',
-    avatar: 'http://loremflickr.com/640/480/sports',
-    thumbsUp: 18,
-    thumbsDown: 64,
-    id: '3',
+    user: "Doreen Hilpert",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/300.jpg",
+    followers: 10,
+    tweets: 84,
+    id: "3",
   },
   {
-    createdAt: '2022-11-08T20:31:42.329Z',
-    content:
-      'Nemo ut eius dolores dolores non. Perspiciatis facere quaerat commodi inventore facilis. Consequatur aperiam maiores amet. Modi libero ducimus architecto vero. Est ab sit illum et dolorem ut.',
-    author: 'Connie Huels',
-    avatar: 'http://loremflickr.com/640/480/city',
-    thumbsUp: 97,
-    thumbsDown: 45,
-    id: '4',
+    user: "Alfred Zieme",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/779.jpg",
+    followers: 30,
+    tweets: 94,
+    id: "4",
   },
   {
-    createdAt: '2022-11-09T11:04:58.878Z',
-    content: 'Saepe expedita repel',
-    author: 'Germane Lynch',
-    avatar: 'http://loremflickr.com/640/480/people',
-    thumbsUp: 10,
-    thumbsDown: 16,
-    id: '5',
+    user: "Edmond Fisher",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/749.jpg",
+    followers: 40,
+    tweets: 85,
+    id: "5",
   },
   {
-    createdAt: '2022-11-08T22:34:50.646Z',
-    content: 'Culpa non ut labore ',
-    author: 'Mari Montgomery',
-    avatar: 'http://loremflickr.com/640/480/animals',
-    thumbsUp: 2,
-    thumbsDown: 38,
-    id: '6',
+    user: "Ida Howe",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/446.jpg",
+    followers: 2,
+    tweets: 63,
+    id: "6",
   },
   {
-    createdAt: '2022-11-09T23:20:01.930Z',
-    content: 'Aliquam sit quis ver',
-    author: 'Bianca Vinson',
-    avatar: 'http://loremflickr.com/640/480/transport',
-    thumbsUp: 71,
-    thumbsDown: 6,
-    id: '7',
+    user: "Henry White PhD",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/582.jpg",
+    followers: 79,
+    tweets: 10,
+    id: "7",
   },
   {
-    createdAt: '2022-11-10T08:56:19.501Z',
-    content: 'Cillum qui exercitat',
-    author: 'Imelda Sweet',
-    avatar: 'http://loremflickr.com/640/480/fashion',
-    thumbsUp: 44,
-    thumbsDown: 65,
-    id: '8',
+    user: "Forrest McLaughlin",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/349.jpg",
+    followers: 57,
+    tweets: 18,
+    id: "8",
   },
   {
-    createdAt: '2022-11-09T18:56:22.673Z',
-    content: 'Reprehenderit nisi s',
-    author: 'Jorden Warren',
-    avatar: 'http://loremflickr.com/640/480/people',
-    thumbsUp: 82,
-    thumbsDown: 80,
-    id: '9',
+    user: "Ms. Lawrence Gutmann",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/904.jpg",
+    followers: 18,
+    tweets: 80,
+    id: "9",
+  },
+  {
+    user: "Samuel Emard",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1136.jpg",
+    followers: 92,
+    tweets: 67,
+    id: "10",
+  },
+  {
+    user: "Bryan Sanford",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/361.jpg",
+    followers: 58,
+    tweets: 18,
+    id: "11",
+  },
+  {
+    user: "Cathy Satterfield",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/880.jpg",
+    followers: 62,
+    tweets: 56,
+    id: "12",
+  },
+  {
+    user: "Alton Lubowitz",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/512.jpg",
+    followers: 49,
+    tweets: 4,
+    id: "13",
+  },
+  {
+    user: "Dianna Gibson Jr.",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/614.jpg",
+    followers: 54,
+    tweets: 63,
+    id: "14",
+  },
+  {
+    user: "Carlton Homenick",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/610.jpg",
+    followers: 39,
+    tweets: 72,
+    id: "15",
+  },
+  {
+    user: "Ms. Winifred Jones",
+    avatar:
+      "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/605.jpg",
+    followers: 18,
+    tweets: 99,
+    id: "16",
   },
 ];
