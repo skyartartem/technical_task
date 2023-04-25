@@ -1,43 +1,41 @@
 .card {
-  @apply bg-slate-50 text-gray-800 p-4 shadow-lg flex max-w-lg rounded-3xl border border-gray-200 w-full;
+  @apply bg-accentColor px-10 shadow-lg flex w-380 rounded-3xl h-460
+  bg-[url('../../images/recCirle.svg')] bg-center bg-no-repeat relative;
 }
 
 .cardWrapper {
-  @apply flex flex-col w-full;
+  @apply mx-auto mt-auto mb-9;
 }
 
-.cardBody {
-  @apply px-4 pt-2 pb-2.5 flex-grow;
-}
+/* .cardBody {
+  @apply px-4 pt-2 pb-2.5;
+} */
 
-.cardFooter {
+/* .cardFooter {
   @apply text-sm flex items-center px-4 py-5 justify-between;
-}
+} */
 
-.author {
+/* .author {
   @apply font-extrabold text-xl leading-relaxed;
+} */
+
+.tweets {
+  @apply text-center text-mainTextColor text-xl;
+}
+.followers {
+  @apply text-center text-mainTextColor text-xl;
 }
 
-.content {
-  @apply text-sm leading-snug md:leading-normal;
-}
-
-.blockquote {
-  @apply text-lg leading-none italic font-bold text-gray-400 mr-1;
-}
-
-.date {
-  @apply text-gray-400;
-}
 
 .buttonBox {
-  @apply flex items-center gap-3;
+  @apply text-center;
 }
 
-.icon {
-  @apply w-7 h-7 fill-gray-500;
+.bgrd {
+ @apply  absolute top-7 ;
 }
 
 .avatar {
-  @apply rounded-full h-9 w-9 mr-2 mt-1;
+  @apply absolute rounded-full h-62 w-62 top-1/2 left-1/2 translate-x-50 translate-y-50
+  ;
 }
