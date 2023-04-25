@@ -10,16 +10,17 @@ module.exports = {
         },
       },
       colors: {
-        accentColor: "#5736A3",
+        accentColor: "#5CD3A8",
         mainTextColor: "#EBD8FF",
+        mainColor: "#4B2A99",
       },
       width: {
         380: "380px",
-        62: "62px"
+        62: "62px",
       },
       height: {
         460: "460px",
-        62: "62px"
+        62: "62px",
       },
       translate: {
         50: "-50%",

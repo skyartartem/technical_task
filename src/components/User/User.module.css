@@ -1,38 +1,28 @@
 .card {
-  @apply bg-accentColor px-10 shadow-lg flex w-380 rounded-3xl h-460
-  bg-[url('../../images/recCirle.svg')] bg-center bg-no-repeat relative;
+  @apply bg-mainColor shadow-lg w-380 rounded-3xl h-460 flex
+  bg-[url('../../images/recCirle.svg')] bg-no-repeat bg-[center_top_190px] relative
+  before:content-[url('../../images/GoItLogo.svg')] before:absolute before:top-5 before:left-5 
+  ;
+  
 }
 
 .cardWrapper {
   @apply mx-auto mt-auto mb-9;
 }
 
-/* .cardBody {
-  @apply px-4 pt-2 pb-2.5;
-} */
-
-/* .cardFooter {
-  @apply text-sm flex items-center px-4 py-5 justify-between;
-} */
-
-/* .author {
-  @apply font-extrabold text-xl leading-relaxed;
-} */
-
 .tweets {
-  @apply text-center text-mainTextColor text-xl;
+  @apply text-center text-mainTextColor text-xl leading-6 mb-4;
 }
 .followers {
-  @apply text-center text-mainTextColor text-xl;
+  @apply text-center text-mainTextColor text-xl leading-6 mb-7;
 }
-
 
 .buttonBox {
   @apply text-center;
 }
 
 .bgrd {
- @apply  absolute top-7 ;
+ @apply  absolute top-7 left-1/2 translate-x-50;
 }
 
 .avatar {
