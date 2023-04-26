@@ -1,8 +1,17 @@
 .button {
-  @apply !bg-mainTextColor w-48 py-3.5 text-black  shadow-xl rounded-lg text-xl uppercase font-semibold transition-colors focus:!bg-accentColor hover:!bg-accentColor;
+  @apply  w-48 py-3.5 text-black  shadow-xl rounded-lg text-lg leading-6 uppercase font-semibold 
+  hover:scale-[1.03] transition-transform
+  /* transition-colors  */
+  /* focus:!bg-accentColor hover:!bg-accentColor; */
 }
 
+.following{
+ @apply !bg-accentColor
+}
 
+.follow{
+ @apply !bg-mainTextColor
+}
 /* 
 .thumbsUp {
   @apply hover:!bg-green-100 focus:!bg-green-100;

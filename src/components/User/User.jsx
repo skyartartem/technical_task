@@ -6,7 +6,15 @@ import { Button } from "../Button/Button";
 
 const converNumber = (number) => new Intl.NumberFormat("ja-JP").format(number);
 
-export const User = ({ followers, tweets, user, avatar, id, updateUser }) => {
+export const User = ({
+  followers,
+  tweets,
+  user,
+  avatar,
+  id,
+  updateUser,
+  isfollow,
+}) => {
   return (
     <li className={styles.card}>
       <img className={styles.bgrd} src={bgrdImg} alt="image" />
@@ -14,9 +22,14 @@ export const User = ({ followers, tweets, user, avatar, id, updateUser }) => {
       <div className={styles.cardWrapper}>
         <p className={styles.tweets}>{converNumber(tweets)} TWEETS</p>
         <p className={styles.followers}>{converNumber(followers)} FOLLOWERS</p>
-        <div className={styles.buttonBox}>
-          <Button updateUser={updateUser} counter={followers} id={id}></Button>
-        </div>
+       
+          <Button
+            updateUser={updateUser}
+            followers={followers}
+            id={id}
+            isfollow={isfollow}
+          />
+          
       </div>
     </li>
   );

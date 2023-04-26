@@ -1,47 +1,39 @@
-// import classNames from "classnames";
-import PropTypes from "prop-types";
+import classNames from "classnames";
+// import PropTypes from "prop-types";
 import React from "react";
 import styles from "./Button.module.css";
 import { postUsers } from "../../services/usersApi";
-// import { useUpdateCommentCountMutation } from "../../redux/commentApi";
 
-export const Button = ({ counter, id, updateUser }) => {
-  // const variants = {
-  //   [styles.thumbsUp]: role === "thumbsUp",
-  //   [styles.thumbsDown]: role === "thumbsDown",
-  // };
 
-  // const [updateCommentCount, { isLoading }] = useUpdateCommentCountMutation();
-
+export const Button = ({ followers, id, isfollow, updateUser }) => {
+  
   const onBtnHandleClick = () => {
-    postUsers(id, counter);
-    updateUser(id);
-    // try {
-    //   await updateCommentCount({ id, [role]: counter + 1 });
-    // } catch (error) {
-    //   console.log(error);
-    // }
-    console.log("click", id);
+    updateUser(id, isfollow);
+    postUsers(id, followers, isfollow);
+    
   };
 
   return (
     <button
       // disabled={isLoading}
       // className={classNames(styles.button)}
-      className={styles.button}
+      className={classNames(
+        styles.button,
+        isfollow ? styles.following : styles.follow
+      )}
       type="button"
-      counter={counter}
+      // counter={counter}
       onClick={onBtnHandleClick}
       id={id}
     >
-      FOLLOW
+      {isfollow ? "following" : "follow"}
     </button>
   );
 };
 
-Button.propTypes = {
-  // children: PropTypes.node.isRequired,
-  counter: PropTypes.number.isRequired,
-  // role: PropTypes.string,
-  id: PropTypes.string.isRequired,
-};
+// Button.propTypes = {
+//   // children: PropTypes.node.isRequired,
+//   counter: PropTypes.number.isRequired,
+//   // role: PropTypes.string,
+//   id: PropTypes.string.isRequired,
+// };

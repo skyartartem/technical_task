@@ -1,9 +1,10 @@
 .header {
-  @apply py-8 shadow-lg border-b-2 border-slate-200;
+  @apply  py-2 shadow-lg border-b-2 border-slate-200 
+  /*bg-white fixed w-screen z-10; */
 }
 
 .headerContainer {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between z-10;
 }
 
 .logo {

@@ -1,0 +1,4 @@
+.button {
+  @apply !bg-slate-300 p-3 mt-5 block mx-auto text-black  shadow-xl rounded-full text-sm   font-semibold 
+  hover:scale-[1.03] transition-transform
+}
