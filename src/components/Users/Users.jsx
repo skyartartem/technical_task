@@ -64,8 +64,8 @@ export const Users = () => {
           const data = await getUsers(page);
           const res = data.map((item) => ({ ...item, isfollow: false }));
           localStorage.setItem(USERS, JSON.stringify([...users, ...res]));
-
           setUsers(JSON.parse(localStorage.getItem(USERS)));
+          
           savingPage(page);
         } catch (error) {
           console.log(error);
@@ -147,23 +147,6 @@ export const Users = () => {
     </>
   );
 };
-
-// {
-//   actualPage < totaluser / 3 && (
-//     <Button
-//       onClick={() => {
-//         if (actualPage) {
-//           setPage(actualPage + 1);
-//         } else {
-//           setPage((prev) => prev + 1);
-//         }
-//       }}
-//     >
-//       Load More
-//     </Button>
-//   );
-// }
-
 
 Users.propTypes = {
   users: PropTypes.arrayOf(PropTypes.shape().isRequired),

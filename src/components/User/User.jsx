@@ -41,5 +41,6 @@ User.propTypes = {
   avatar: PropTypes.string.isRequired,
   tweets: PropTypes.number.isRequired,
   followers: PropTypes.number.isRequired,
-  updateUser: PropTypes.func.isRequired
+  updateUser: PropTypes.func.isRequired,
+  isfollow: PropTypes.bool,
 };
