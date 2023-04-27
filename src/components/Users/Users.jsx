@@ -59,26 +59,26 @@ export const Users = () => {
 
   useEffect(() => {
     const fu = async () => {
-        setloading(true);
+        // setloading(true);
         try {
           const data = await getUsers(page);
           const res = data.map((item) => ({ ...item, isfollow: false }));
           localStorage.setItem(USERS, JSON.stringify([...users, ...res]));
           setUsers(JSON.parse(localStorage.getItem(USERS)));
-          
+
           savingPage(page);
         } catch (error) {
           console.log(error);
           setError(error);
         } finally {
-          setloading(false);
+          // setloading(false);
         }
       };
     if (page > 1) {
       fu()
     } else {
       const fufu = async () => {
-        setloading(true);
+        // setloading(true);
         try {
           const data = await getAllUsers();
           savingTotal(data.length);
@@ -87,7 +87,7 @@ export const Users = () => {
           console.log(error);
           setError(error);
         } finally {
-          setloading(false);
+          // setloading(false);
         }
       };
       fufu()
